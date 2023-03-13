@@ -1,23 +1,21 @@
 
 body{
+  
   margin: 0;
   padding: 0;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;  
+}
+html,body{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-html,body{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
 
 span{
   color: red;
 }
 .navbar{
-  
   display: flex;
  align-items: center;
 padding: 20px ;
@@ -195,6 +193,8 @@ button:hover{
   width: 100%;
   display: flex;
   color: white;
+  width: 100%;
+
 
 }
 
@@ -253,19 +253,17 @@ text-align: initial;
 }
 
 .service{
- padding: 5rem 0 15rem 0;
+  padding: 4rem 0 13rem 0;
  background-image: url(D:\html\my-app\src\assets\river.jpg);
  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
-  
 }
 
 .service-body{
  color: black;
-  width: 70%;
   background-color: whitesmoke;
   font-family: arial;
   margin-left: 30px;
@@ -277,7 +275,9 @@ text-align: initial;
   justify-content: space-evenly;
   align-items: center;
 margin-top: 10px;
+
 }
+
 
 
 .top{
@@ -359,7 +359,6 @@ padding: 0;
 }
 
 .c-page{
-  height: 100vh;
   width: 100%;
   background-image: url(D:\html\my-app\src\assets\river.jpg);
   background-repeat: no-repeat;
@@ -370,9 +369,14 @@ padding: 0;
    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
    text-align: center;
   margin-top: -30px;
-  
 }
 
+.c-main{
+  margin-top: 50px;
+  align-items: center;
+  text-align: center;
+  
+}
 .c-us{
   font-size: 40px;
   border-bottom: 2px solid white;
@@ -381,10 +385,12 @@ padding: 0;
 }
 
 .c-info{
+  align-items: center;
+  margin-left: 5rem;
   float: left;
-  margin-top: 10em;
-  margin-left: 80px;
-  padding: 50px;
+  margin-top: 20px;
+  width: 30%;
+  padding: 40px;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
 
 }
@@ -396,39 +402,94 @@ padding: 0;
 
 .c-para{
   float: inline-start;
+  text-align: start;
     
 }
 
 .c-paraa{
   margin-right: 34px;
+  text-align: start;
+
 }
 
 .c-paraaa{
-margin-left: 10px;
+text-align: start;
+
 }
 .c-form{
-display: inline-block;
-  margin-top: 10em;
+  width: 30%;
+  margin-top: 20px;
+  float: right;
   padding-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-right: 100px;
    align-items: center;
    text-align: start;
-  padding: 25px;
-  margin-left: 100px;
+  padding: 20px 10px 25px 10px;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
 
   }
 
-  
+  @media (max-width:850px) {
+    .c-form{
+      display: block;
+      width: 50%;
+    
+    }
+    .c-info{
+      width: 40%;
+      margin-left: 6.5rem;
+    }
+    
+  }
+
+  @media (max-width:412px ) {
+    .c-form{
+      display: block;
+      width: 50%;
+      
+    
+    }
+    .c-info{
+      width: 40%;
+      margin-left: 4rem;
+    }
+    
+  }
+
+ 
+
 .c-comment{
-  width: 300px;
+  width: 200px;
   height: 50px;
   text-align: start;
+
 }
 
 .c-type{
 display: flex;
 text-align: start;
 
+}
+
+.top{
+  background-image: url(D:\html\my-app\src\assets\river.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  width: 100%;
+  margin: 0;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+  display: block;
+  
+}
+.btn-up{
+  margin-left: auto;
+  margin-right: 40px;
+  margin-top: 150px;
+  font-size: 4rem;
+  border-radius: 50px;
+  align-items: end;
+ margin-left: 90%;  
 }
